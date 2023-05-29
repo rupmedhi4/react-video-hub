@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, VStack, useDisclosure } from '@chakra-ui/react';
+import { Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, HStack, VStack, useDisclosure } from '@chakra-ui/react';
 import { BiMenuAltLeft } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 
@@ -25,22 +25,31 @@ export default function Header() {
         <DrawerContent>
             <DrawerCloseButton/>
             <DrawerHeader>VIDEO HUB</DrawerHeader>
-            <DrawerBody>
-                <VStack>
-                    <Button variant={"ghost"} colorScheme='purple'>
+            <DrawerBody >
+                <VStack alignItems={'flex-start'}>
+                    <Button onClick={onClose} variant={"ghost"} colorScheme='purple'>
                         <Link to="/">Home</Link>
                     </Button>
-                    <Button variant={"ghost"} colorScheme='purple'>
+                    <Button onClick={onClose} variant={"ghost"} colorScheme='purple'>
                         <Link to="/videos">Videos</Link>
                     </Button>
-                    <Button variant={"ghost"} colorScheme='purple'>
+                    <Button onClick={onClose} variant={"ghost"} colorScheme='purple'>
                         <Link to="/videos?category=free">Free Videos</Link>
                     </Button>
-                    <Button variant={"ghost"} colorScheme='purple'>
+                    <Button onClick={onClose} variant={"ghost"} colorScheme='purple'>
                         <Link to="/upload">Upload Video</Link>
                     </Button>
                  
                 </VStack>
+
+                <HStack pos={"absolute"} bottom={"10"} left={"0"}  w={"full"} justifyContent={'space-evenly'}>
+                    <Button onClick={onClose} colorScheme='purple'>
+                        <Link>Log in</Link>
+                    </Button>
+                    <Button onClick={onClose} colorScheme='purple' variant={"outline"}>
+                        <Link>Sign Up</Link>
+                    </Button>
+                </HStack>
             </DrawerBody>
              
         </DrawerContent>
