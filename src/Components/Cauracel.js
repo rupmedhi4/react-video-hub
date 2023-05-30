@@ -37,15 +37,15 @@ export default function Cauracel() {
         </Box>
         <Box w={"full"} h={"100vh"} >
             <img src={img2} alt="" />
-            <Heading backgroundColor={'blackAlpha.600'} color={'white'} {...headingOptions}>Watch The Future</Heading>
+            <Heading backgroundColor={'whiteAlpha.900'} color={'black'} {...headingOptions}>  Future is Gaming</Heading>
         </Box>
         <Box w={"full"} h={"100vh"} >
             <img src={img3} alt="" />
-            <Heading backgroundColor={'blackAlpha.600'} color={'white'} {...headingOptions}>Watch The Future</Heading>
+            <Heading backgroundColor={'blackAlpha.600'} color={'white'} {...headingOptions}>Gaming on Console</Heading>
         </Box>
         <Box w={"full"} h={"100vh"} >
             <img src={img4} alt="" />
-            <Heading backgroundColor={'blackAlpha.600'} color={'white'} {...headingOptions}>Watch The Future</Heading>
+            <Heading backgroundColor={'blackAlpha.600'} color={'white'} {...headingOptions}> Night life is cool</Heading>
         </Box>
 
      </Carousel>
