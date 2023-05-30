@@ -8,6 +8,7 @@ export default function Header() {
   return (
     <>
       <Button
+      zIndex={'overlay'}
       pos={"fixed"}
       left={"4"}
       top={"4"}
