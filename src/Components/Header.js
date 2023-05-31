@@ -40,6 +40,12 @@ export default function Header() {
                     <Button onClick={onClose} variant={"ghost"} colorScheme='purple'>
                         <Link to="/upload">Upload Video</Link>
                     </Button>
+                    <Button onClick={onClose} variant={"ghost"} colorScheme='purple'>
+                        <Link to="/login">Login</Link>
+                    </Button>
+                    <Button onClick={onClose} variant={"ghost"} colorScheme='purple'>
+                        <Link to="/signup">SignUp</Link>
+                    </Button>
                  
                 </VStack>
 
